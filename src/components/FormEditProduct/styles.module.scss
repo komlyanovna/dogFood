@@ -1,0 +1,22 @@
+.containerForm {
+  padding: 20px;
+  border-radius: 15px;
+
+  .form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    .form__inputs {
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      width: max-content;
+    }
+  
+    button {
+      background-color: #6f9c67;
+      border-radius: 10px;
+    }
+  }
+}
