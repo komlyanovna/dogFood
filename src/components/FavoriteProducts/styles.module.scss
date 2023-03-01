@@ -1,0 +1,36 @@
+.containerFavorite {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+h5 {
+  margin-top: 0;
+}
+
+.button {
+  width: max-content;
+  border-radius: 8px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+@media (max-width: 1040px) and (min-width: 710px) {
+  .containerFavorite {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 710px) and (min-width: 480px) {
+  .containerFavorite {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .containerFavorite {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

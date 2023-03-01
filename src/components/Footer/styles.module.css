@@ -1,0 +1,32 @@
+footer {
+  background-color: #edb864;
+  display: flex;
+  width: 100%;
+  position: sticky;
+  flex-shrink: 0;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 50px 10px 50px;
+}
+
+@media (min-width: 900px) and (max-width: 1080px) {
+  .footerContainer {
+    padding: 10px 30px 10px 30px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 625px) {
+  .footerContainer {
+    padding: 10px 5px 10px 5px;
+    gap: 10px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}

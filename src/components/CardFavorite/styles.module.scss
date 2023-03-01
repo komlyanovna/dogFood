@@ -1,0 +1,111 @@
+.containerCard {
+  display: flex;
+  border: 1px solid gray;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.active {
+  color: #ffa270;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.active:hover:after {
+  content: attr(title);
+}
+
+.icon:hover:after {
+  content: attr(title);
+}
+
+.rub {
+  width: 15px;
+  height: 15px;
+}
+
+.priceActive {
+  text-decoration: line-through;
+  color: rgb(148, 147, 147);
+}
+
+.price {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.discount {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  border: 1px solid gray;
+  width: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: greenyellow;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: green;
+  border-radius: 8px;
+  color: white;
+  width: max-content;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.star {
+  color: #f2d322;
+}
+
+p {
+  margin: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 35px;
+  align-items: center;
+}
+
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image {
+  width: 140px;
+  height: 140px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+

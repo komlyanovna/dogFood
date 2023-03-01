@@ -1,0 +1,14 @@
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  input {
+    background-color: #fce1e1;
+  }
+
+  button {
+    background-color: #8ceda6;
+    border-radius: 20px;
+  }
+}
