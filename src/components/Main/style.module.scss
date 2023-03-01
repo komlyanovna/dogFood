@@ -1,0 +1,31 @@
+.main {
+  padding-top: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // background-color: #f2ebeb;
+  flex: 1 1 auto;
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 320px) {
+  .main {
+    flex-direction: column;
+
+    h2 {
+      font-size: 24px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+  }
+}

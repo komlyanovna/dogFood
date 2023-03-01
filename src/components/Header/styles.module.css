@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 50px 10px 50px;
+  background-color: #edb864;
+  position: relative;
+}
+
+.Link {
+  text-decoration: none;
+  color: white;
+}
+
+.LinkContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+}
+
+.outup {
+  background-color: #c75858; 
+  border-radius: 3px;
+  color: white;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.burger {
+  display: none;
+} 
+
+@media (min-width: 911px) and (max-width: 1100px) {
+  .header {
+    padding: 7px 25px 7px 25px;
+  }
+
+  .LinkContainer {
+    gap: 7px;
+    padding: 3px;
+  }
+
+  .outup {
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 910px){
+.header {
+  justify-content: space-between;
+}
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: -200%;
+
+    top: 0;
+    bottom: 0;
+    height: 50vh;
+    width: 50vw;
+    background-color: #edb864;
+    z-index: 10;
+    padding: 40px;
+    transition: right 1s;
+    align-items: baseline;
+  }
+
+  .active {
+    right: 0;
+  }
+
+  .navigationIcon {
+    flex-direction: column;
+  }
+}
